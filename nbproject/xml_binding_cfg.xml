@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<schemas xmlns='http://xml.netbeans.org/schema/JAXBWizConfig' destdir='build/generated-sources/jaxb' projectName='xml_test' version='1.0'>
+	<schema type='-xmlschema' package='conf2' name='conf2'>
+		<xjc-options>
+			<xjc-option name='-nv' value='true'/>
+			<xjc-option name='-verbose' value='true'/>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='xml-resources/jaxb/conf2/conf.xsd' origLocation='src/com/company/resources/conf.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+</schemas>

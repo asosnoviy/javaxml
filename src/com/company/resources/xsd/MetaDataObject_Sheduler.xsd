@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <!-- XML Schema Generated from XML Document on Thu Feb 02 2017 01:06:22 GMT+0300 (RTZ 2 (зима)) -->
+         <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+         <xs:element name="MetaDataObject">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="ScheduledJob">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="Properties">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="Name" type="xs:string"></xs:element>
+                                                               <xs:element name="Synonym">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="item">
+                                                                                      <xs:complexType>
+                                                                                                   <xs:sequence>
+                                                                                                   <xs:element name="name" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="lang" >
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:attribute name="name" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="type" type="xs:string"></xs:attribute>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="content" >
+                                                                                                      <xs:complexType>
+                                                                                                         <xs:attribute name="name" type="xs:string"></xs:attribute>
+                                                                                                         <xs:attribute name="type" type="xs:string"></xs:attribute>
+                                                                                                      </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="Comment"></xs:element>
+                                                               <xs:element name="MethodName" type="xs:string"></xs:element>
+                                                               <xs:element name="Description"></xs:element>
+                                                               <xs:element name="Key"></xs:element>
+                                                               <xs:element name="Use" type="xs:string"></xs:element>
+                                                               <xs:element name="Predefined" type="xs:string"></xs:element>
+                                                               <xs:element name="RestartCountOnFailure" type="xs:int"></xs:element>
+                                                               <xs:element name="RestartIntervalOnFailure" type="xs:int"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                       <xs:attribute name="uuid" type="xs:string"></xs:attribute>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+             </xs:complexType>
+         </xs:element>
+   </xs:schema>

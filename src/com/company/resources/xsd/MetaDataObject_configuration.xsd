@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <xs:element name="MetaDataObject">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="Configuration">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="InternalInfo">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="ContainedObject" maxOccurs="unbounded">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="name" type="xs:string"></xs:element>
+                                                                                 <xs:element name="ClassId">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="name" type="xs:string"></xs:attribute>
+                                                                                             <xs:attribute name="type" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+
+                                                                                 <xs:element name="ObjectId">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="name" type="xs:string"></xs:attribute>
+                                                                                             <xs:attribute name="type" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="Properties">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="Name" type="xs:string"></xs:element>
+                                                               <xs:element name="Synonym"></xs:element>
+                                                               <xs:element name="Comment"></xs:element>
+                                                               <xs:element name="NamePrefix"></xs:element>
+                                                               <xs:element name="ConfigurationExtensionCompatibilityMode" type="xs:string"></xs:element>
+                                                               <xs:element name="DefaultRunMode" type="xs:string"></xs:element>
+                                                               <xs:element name="UsePurposes">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="Value">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="name" type="xs:string"></xs:attribute>
+                                                                                             <xs:attribute name="type" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="ScriptVariant" type="xs:string"></xs:element>
+                                                               <xs:element name="DefaultRoles"></xs:element>
+                                                               <xs:element name="Vendor"></xs:element>
+                                                               <xs:element name="Version"></xs:element>
+                                                               <xs:element name="UpdateCatalogAddress"></xs:element>
+                                                               <xs:element name="IncludeHelpInContents" type="xs:string"></xs:element>
+                                                               <xs:element name="UseManagedFormInOrdinaryApplication" type="xs:string"></xs:element>
+                                                               <xs:element name="UseOrdinaryFormInManagedApplication" type="xs:string"></xs:element>
+                                                               <xs:element name="AdditionalFullTextSearchDictionaries"></xs:element>
+                                                               <xs:element name="CommonSettingsStorage"></xs:element>
+                                                               <xs:element name="ReportsUserSettingsStorage"></xs:element>
+                                                               <xs:element name="ReportsVariantsStorage"></xs:element>
+                                                               <xs:element name="FormDataSettingsStorage"></xs:element>
+                                                               <xs:element name="DynamicListsUserSettingsStorage"></xs:element>
+                                                               <xs:element name="Content"></xs:element>
+                                                               <xs:element name="DefaultReportForm"></xs:element>
+                                                               <xs:element name="DefaultReportVariantForm"></xs:element>
+                                                               <xs:element name="DefaultReportSettingsForm"></xs:element>
+                                                               <xs:element name="DefaultDynamicListSettingsForm"></xs:element>
+                                                               <xs:element name="DefaultSearchForm"></xs:element>
+                                                               <xs:element name="RequiredMobileApplicationPermissions">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="pair" maxOccurs="unbounded">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="Key">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:attribute name="name" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="type" type="xs:string"></xs:attribute>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="Value">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:attribute name="name" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="type" type="xs:string"></xs:attribute>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="DefaultInterface"></xs:element>
+                                                               <xs:element name="DefaultStyle"></xs:element>
+                                                               <xs:element name="DefaultLanguage" type="xs:string"></xs:element>
+                                                               <xs:element name="BriefInformation"></xs:element>
+                                                               <xs:element name="DetailedInformation"></xs:element>
+                                                               <xs:element name="Copyright"></xs:element>
+                                                               <xs:element name="VendorInformationAddress"></xs:element>
+                                                               <xs:element name="ConfigurationInformationAddress"></xs:element>
+                                                               <xs:element name="DataLockControlMode" type="xs:string"></xs:element>
+                                                               <xs:element name="ObjectAutonumerationMode" type="xs:string"></xs:element>
+                                                               <xs:element name="ModalityUseMode" type="xs:string"></xs:element>
+                                                               <xs:element name="SynchronousPlatformExtensionAndAddInCallUseMode" type="xs:string"></xs:element>
+                                                               <xs:element name="InterfaceCompatibilityMode" type="xs:string"></xs:element>
+                                                               <xs:element name="CompatibilityMode" type="xs:string"></xs:element>
+                                                               <xs:element name="DefaultConstantsForm"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="ChildObjects">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="Language" type="xs:string"></xs:element>
+                                                               <xs:element name="Subsystem" type="xs:string"></xs:element>
+                                                               <xs:element name="CommonModule" maxOccurs="unbounded" type="xs:string"></xs:element>
+                                                               <xs:element name="ScheduledJob" maxOccurs="unbounded" type="xs:string"></xs:element>
+                                                               <xs:element name="Document" type="xs:string"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                       <xs:attribute name="uuid" type="xs:string"></xs:attribute>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+                 </xs:complexType>
+         </xs:element>
+   </xs:schema>
