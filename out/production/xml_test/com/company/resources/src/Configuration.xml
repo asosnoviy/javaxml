@@ -120,6 +120,7 @@
 			<ScheduledJob>ПервоеРегламентноеЗадание</ScheduledJob>
 			<ScheduledJob>ВтороеРегламентное</ScheduledJob>
 			<Document>ПростоДокумент</Document>
+			<Report>ПростоОтчет</Report>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

@@ -112,7 +112,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "MetaDataObject", namespace = "http://v8.1c.ru/8.3/MDClasses")
 public class ScheduledJobsObject {
 
-    @XmlElement(name = "MetaDataObject", required = true, namespace = "http://v8.1c.ru/8.3/MDClasses")
+    @XmlElement(name = "ScheduledJob", required = true, namespace = "http://v8.1c.ru/8.3/MDClasses")
     protected ScheduledJobsObject.ScheduledJob scheduledJob;
 
     /**
